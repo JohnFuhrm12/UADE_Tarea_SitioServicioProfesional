@@ -17,9 +17,16 @@ html, body {
     padding-bottom: 10px;
 }
 
+#navTitleWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
 #navTitle {
     font-size: 25px;
     font-weight: bold;
+    position: relative;
+    bottom: 2px;
 }
 
 #navTitle:hover {
@@ -205,4 +212,56 @@ html, body {
 #contactFormHeader {
     position: relative;
     left: -80px;
+}
+
+#logo {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+
+@media (max-width: 750px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .subSection {
+        width: 100vw;
+    }
+
+    .sectionPhoto {
+        width: 100vw;
+    }
+
+    #priceBlocks {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #contactFormHeader {
+        position: relative;
+        left: 0px;
+    }
+
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #contactInfoWrapper {
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    #navTitle {
+        display: none;
+    }
 }
