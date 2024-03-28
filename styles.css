@@ -37,10 +37,129 @@ html, body {
     border-bottom: solid 2px var(--brand-blue);
     padding-bottom: 5px;
     transition: 0.3s;
+    text-decoration: none;
+    color: white;
 }
 
 .navLink:hover {
     border-bottom: solid 2px white;
     cursor: pointer;
     transition: 0.3s;
+}
+
+#homeBackground {
+    background-image: url('public/pool1.avif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+#homeTextOverlay {
+    text-align: center;
+    position: relative;
+    top: 250px;
+    background-color: rgba(0, 32, 90, 0.538);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+#homeTitle {
+    color: white;
+    font-size: 45px;
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+
+#homeSubtitle {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#homeOverlaybutton {
+    background-color: var(--brand-blue);
+    color: white;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border: solid 2px var(--brand-blue);
+    transition: 0.5s;
+}
+
+#homeOverlaybutton:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0.8;
+    border: solid 2px rgb(209, 211, 255);
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(240, 240, 240);
+}
+
+.subSection {
+    width: 50vw;
+}
+
+.sectionTitle {
+    font-size: 30px;
+    text-align: center;
+}
+
+.para {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.sectionPhoto {
+    width: 50vw;
+    height: 100%;
+}
+
+#priceSection {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-inline: 5%;
+    padding-bottom: 40px;
+}
+
+#priceBlocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.priceBlock {
+    max-width: 300px;
+    text-align: left;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    height: 230px;
+}
+
+.priceHeader {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.priceList {
+    padding: 0;
+}
+
+.priceList li {
+    font-size: 16px;
+    padding: 5px;
+    list-style-type: none;
 }
