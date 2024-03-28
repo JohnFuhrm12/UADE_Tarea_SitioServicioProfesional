@@ -122,7 +122,6 @@ html, body {
 
 .sectionPhoto {
     width: 50vw;
-    height: 100%;
 }
 
 #priceSection {
@@ -139,14 +138,15 @@ html, body {
     flex-wrap: wrap;
     margin: 0 auto;
     gap: 40px;
+    margin-top: 20px;
 }
 
 .priceBlock {
-    max-width: 300px;
     text-align: left;
     background-color: rgb(240, 240, 240);
     padding: 10px;
-    height: 230px;
+    width: 280px;
+    height: 260px;
 }
 
 .priceHeader {
@@ -159,7 +159,50 @@ html, body {
 }
 
 .priceList li {
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px;
     list-style-type: none;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+.formItem {
+    padding: 5px;
+    font-size: 18px;
+}
+
+#formSelect:hover {
+    cursor: pointer;
+}
+
+.formOption:hover {
+    cursor: pointer;
+}
+
+#formTextArea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+#contactSection {
+    padding-bottom: 60px;
+}
+
+#contactInfoWrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#contactInfoWrapper span { 
+    font-size: 18px;
+}
+
+#contactFormHeader {
+    position: relative;
+    left: -80px;
 }
