@@ -218,8 +218,25 @@ html, body {
     width: 25px;
     height: 25px;
     position: relative;
-    top: 3px;
+    top: 0px;
     margin-right: 10px;
+}
+
+#contactFormButton {
+    background-color: var(--brand-blue);
+    color: white;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.5s;
+    width: 200px;
+    border: solid 2px var(--brand-blue);
+}
+
+#contactFormButton:hover {
+    transition: 0.5s;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 @media (max-width: 750px) {
