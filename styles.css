@@ -4,6 +4,7 @@
 
 html, body {
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 #navbar {
@@ -276,7 +277,8 @@ html, body {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        width: 95%;
+        width: 90%;
+        margin-left: 0px;
         margin: 0 auto;
     }
 
@@ -287,5 +289,11 @@ html, body {
 
     #navTitle {
         display: none;
+    }
+
+    #map {
+        margin: 0 auto;
+        width: 85%;
+        padding-inline: 0%;
     }
 }
