@@ -296,4 +296,13 @@ html, body {
         width: 85%;
         padding-inline: 0%;
     }
+
+    #homeBackground {
+        background-image: url('public/pool1.avif');
+        background-attachment: local;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+    }
 }
